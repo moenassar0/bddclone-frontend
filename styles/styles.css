@@ -1,9 +1,18 @@
-/* Changing the font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-.body{
-    font-family: 'Poppins', sans-serif;
+/* Importing the font */
+@font-face {
+    font-family: "TheMixBlackBold"; src:url(../assets/fonts/TheMixSemiBold-Plain.otf) format("opentype");
+    font-family: "TheMixBlack"; src:url(../assets/fonts/TheMixBlack-Plain.otf) format("opentype");
 }
+
+.themixblackbold{
+    font-family: "TheMixBlack";
+    font-weight: 700;
+}
+
+.themixblack{
+    font-family: "TheMixBlack";
+}
+
 
 *{
     box-sizing: border-box;
@@ -272,16 +281,57 @@
 
 .trending-cover{
     background-image: url("../assets/images/trending-background.png");
-    padding: 50px 0 25px 0;
+    padding: 50px 25px;
 }
+
 .trending-container{
     max-width: 1170px;
     margin: auto;
 }
+
+.trending-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .trending-col{
-    width: 26%;
-    padding: 0 15px;
+    width: 30%;
     text-align: center;
+    height: 470px;
+}
+
+.trending-col-imageblock{
+    width: 100%;
+    height: 55%;
+
+}
+
+.trending-col-textblock{
+    padding: auto;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    background-color: white;
+}
+
+.trending-col-footer{
+    padding: auto;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.trending-col-imageblock > img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.trending-col-textblock > p{
+    padding-top: 5px;
 }
 
 /* TRENDING END */
@@ -514,6 +564,10 @@ margin-bottom: 5px;
 }
 
 @media screen and (max-width:800px){
+    .trending-col{
+        width: 100%;
+        margin-bottom: 10px;
+    }
     .video-image{
         padding: 0 10% 10% 10%;
     }
