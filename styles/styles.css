@@ -272,9 +272,6 @@
     text-align: center;
     margin-top: 20px;
 }
-
-
-
 /* PROGRAMS END*/
 
 /* TRENDING START */
@@ -310,7 +307,7 @@
 .trending-col-textblock{
     padding: auto;
     width: 100%;
-    height: 15%;
+    height: 20%;
     text-align: center;
     background-color: white;
 }
@@ -335,6 +332,44 @@
 }
 
 /* TRENDING END */
+
+/* COMMUNITY START */
+.community-cover{
+    background: white;
+    width: 100%;
+}
+
+.community-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.community-col-words{
+    padding-left: 7vw;
+    padding-top: 20px;
+    width: 40%;
+    height: 20%;
+}
+
+.community-col-words h1{
+    height: 100%;
+    width: 100%;
+}
+
+.community-col-youtube{
+    width: 28%;
+    height: auto;
+    margin-right: 10px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.community-col-youtube > img{
+    height: 80%;
+    width: 80%;
+
+}
+/* COMMUNITY END */
 
 /* CUSTOM FOOTER */
 
@@ -402,7 +437,10 @@
 
 .footer-btns{
     width: 50%;
+}
 
+.footer-end{
+    padding-left:40px;
 }
 
 /* CUSTOM FOOTER */
@@ -503,8 +541,8 @@
 }
 
 .rcorners {
-  border-radius: 25px;
-padding: 20px; 
+    border-radius: 25px;
+    padding: 20px; 
 }
 
 .flex-grow-2{
@@ -512,16 +550,16 @@ padding: 20px;
 }
 
 .flex-grow-3{
-width: 40%;
+    width: 40%;
 }
 
 .facilities-list{
-list-style-image: url("../assets/images/bullet-point.png");
-padding-left: 5px;
+    list-style-image: url("../assets/images/bullet-point.png");
+    padding-left: 5px;
 }
 
 .facilities-list > li{
-margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 /* Formating */
@@ -564,6 +602,22 @@ margin-bottom: 5px;
 }
 
 @media screen and (max-width:800px){
+    .community-col-words h1{
+        height: 100%;
+        width: 100%;
+        font-size: 5vw;
+    }
+    .community-col-words{
+        width: 100%;
+    }
+    .community-col-youtube{
+        width: 100%;
+        height: 40%;
+        text-align: center;
+    }
+    .community-col-youtube > img{
+        width: 50%;
+    }
     .trending-col{
         width: 100%;
         margin-bottom: 10px;
@@ -599,8 +653,12 @@ margin-bottom: 5px;
         margin-top: 30px;
     } 
     .vision-container > img{
-
-        height: 60vh;
+        height: 40vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer-end{
+        padding-left:10px;
     } 
 }
 
